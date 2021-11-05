@@ -1,3 +1,4 @@
+#-*- coding:utf-8 -*-
 import os 
 def generate_folders(problems_str):
     '''generate_folder.py파일이 있는 위치에 백준코딩 문제 폴더 생성 함수 
