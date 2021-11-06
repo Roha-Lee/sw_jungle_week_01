@@ -1,5 +1,9 @@
 import sys
 def factorial(n):
+    # n! = n * (n-1)!
+    # 0! = 1
+    # 1! = 1
+    # 2! = 2를 구현한다.
     if n == 0:
         return 1
     elif n < 3:

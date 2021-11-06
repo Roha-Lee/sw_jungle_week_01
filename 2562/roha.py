@@ -1,6 +1,7 @@
 def find_max(nums):
     max_elem = 0
     pos = -1
+    # 최대값과 그 위치를 스캔하면서 찾아서 반환
     for i, num in enumerate(nums):
         if num > max_elem: 
             max_elem = num

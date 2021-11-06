@@ -1,5 +1,6 @@
 import sys 
 def get_grade(score):
+    # 구간마다 알맞은 성적을 반환해준다. 
     if 90 <= score <= 100:
         return 'A'
     elif 80 <= score <= 89:
