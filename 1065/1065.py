@@ -3,7 +3,7 @@ import sys
 n = int(sys.stdin.readline())
 
 count = 0
-for i in range(1,n):
+for i in range(1,n+1):
     # 세자리 수가 안되는 수는 모두 한수로 쳐주더라
     if i < 100:
         count += 1
