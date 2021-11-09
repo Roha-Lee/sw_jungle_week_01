@@ -4,7 +4,6 @@ input = sys.stdin.readline
 # 원반 n개를 x기둥에서 y기둥으로 옮기기
 def hanoi(n, x, y):
     if n == 1:
-        
         print(f"{x} {y}")
         return
     
