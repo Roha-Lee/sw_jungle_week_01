@@ -8,7 +8,7 @@ for i in range(n):
     scores[i].pop(0)
 
 #학생들 점수 평균
-for i in range(n):
+for i in scores:
     scores_sum = sum(scores[i])
     avg = scores_sum / len(scores[i])
 

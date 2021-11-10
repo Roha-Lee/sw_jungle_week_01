@@ -1,7 +1,6 @@
 a = int(input())
 
-for i in range(9):
+for i in range(10):
     if i == 0 :
-        pass
-    i += 1
+        continue
     print(a, '*', i, '=', a*i)
