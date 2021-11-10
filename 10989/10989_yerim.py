@@ -4,7 +4,7 @@ n = int(input())
 #주어질 자연수 0부터 10,000까지니까 인덱스[0]을 10001개
 count = [0] * 10001 
 
-#input_num와 count[]의 i(인덱스숫자)가 일치하면 +1씩 카운팅
+#input_num와 count[]:(인덱스)의 i(인덱스숫자)가 일치하면 +1씩 카운팅
 for i in range(n):
     input_num = int(input())
     count[input_num] += 1 
