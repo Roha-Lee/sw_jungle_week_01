@@ -13,7 +13,7 @@ def search(past = 0, count = 0, total_cost = 0, start = 0):
         # 이번 노드를 방문하지 않은 경우 알고리즘 진행
         if visits[i] == False:
             # 다음 경로에 길이 없는 경우, 지금까지의 경로의 합이 최솟값보다 높을 경우 (더 볼필요 없음) 더 이상 진행 X
-            if count == 0 or (paths[past][i] != 0 and total_min > total_cost + paths[past][i]):
+            if count == 0 or paths[past][i] != 0 and not total_min < total_cost + paths[past][i]:
                 # 시작점을 저장하기 위한 조건문
                 if count == 0:
                     start = i
