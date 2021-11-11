@@ -3,19 +3,23 @@ import sys
 n = int(sys.stdin.readline())
 # numbers = list(range(2,1001))
 input_numbers = list(map(int, sys.stdin.readline().split()))
+# input_numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13]
 
-# target : 리스트에서 없앨 배수 , limit : 범위
+# target : 리스트에서 없앨 배수
 def removeNumber(target, list):
     cycle = 2
 
     while True:
         target_number = target * cycle
+        # 리스트가 공백인 경우
         if not list:
             return
 
+        # 지우고 싶은 값이 리스트안에 있는 수의 최댓값보다 큰 경우 
         if target_number > max(list):
             return
         
+        # 리스트안에 내가 지우고싶은 수가 있어
         if target_number in list:
             list.remove(target_number)
         cycle += 1
